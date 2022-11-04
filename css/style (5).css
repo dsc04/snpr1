@@ -29,11 +29,11 @@ padding-top: 50px;
     /* border: 2px solid red; */
 }
 .logo img{
-    border: 2px solid red;
+    /* border: 2px solid red; */
 
 }
 .button{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     padding: 20px;
     background-color: #F7654A;
     text-align: right;
@@ -334,9 +334,21 @@ color: #FFFFFF;
     flex-wrap: wrap;
     gap: 10px 10px;
     justify-content: center;
+    padding-bottom: 107px;
 }
 .review_all{
     margin-bottom: 150px;
+}
+.review_title{
+    text-align: center;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 53px;
+    padding-bottom: 64px;
+
+    color: #000000;
 }
 .review_wrap{
     background-color: #f0f0f0;
@@ -390,6 +402,11 @@ color: #FFFFFF;
     grid-template-columns: repeat(3,1fr);
     justify-content: center;
     grid-gap: 0px 30px;
+}
+.sam_container {
+    background-color: #F7654A;
+    padding:40px 0;
+
 }
 .samd_wrap{
     display: flex;
@@ -538,6 +555,7 @@ line-height: 0;
 }
 } 
 @media all and (min-width: 768px) and (max-width: 1024px) { 
+
 .gridcont{
 transform: translate(0px, 0px);
 }
@@ -568,13 +586,47 @@ transform: translate(0px, 0px);
     grid-template-columns: repeat(1,1fr);
     justify-content: left;
 }
+.review_all{
+    margin-bottom: 0px;
+}
+.reviewer_name{
+    padding-bottom: 100px;
+}
 .contacts_mamka{
     display: grid;
     grid-template-columns: repeat(2,1fr);
 
 }
+.contacts_gridcont{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 } 
 @media all and (min-width: 480px) and (max-width: 768px) { 
+.fonover h1 { 
+    line-height: 40px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    font-size: 2.5em;
+}
+.fonover p{
+    font-size: 1em;
+}    
+.dermoq h2{
+    padding-top: 15px;
+    font-size: 40px;
+    line-height: 53px;
+}
+.dermoq h3{
+    font-size: 22px;
+    line-height: 27px;
+}
+.dermoq p{
+    font-size: 16px;
+    line-height: 13px;
+    }
 .gridzans{
 display: grid;
 grid-template-columns: repeat(2,1fr);
@@ -616,94 +668,11 @@ grid-template-columns: repeat(2,1fr);
     min-width: 400px;
     min-height: 339px;
     position: relative; */
-
-.review_mamka{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    justify-content: left;
+.review_all{
+    margin-bottom: 0px;
 }
-.contacts_mamka{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-
-}
-}
-
-@media all and (max-width: 480px) {
-
-
-.gridzans {
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-
-
-}
-body {
-    font-size: 5px;
-}
-.fonover h1 { 
-    line-height: 25px;
-    padding-top: 20px;
-}
-.logo img { 
-    width: 50px;
-}
-.logo button {
-    padding: 3px;
-}
-.button span {
-    width: 10px;
-    height: 1px;
-    margin-top: 3px;
-       
-
-}
-.gridcont{
-    grid-template-columns: repeat(2,1fr);
-    padding: 28px 65px;
-
-}
-.fonover p{
-    font-size: 2em;
-}
-
-.dermoq h2{
-    font-size: 36px;
-    line-height: 53px;
-}
-.dermoq h3{
-    font-size: 16px;
-    line-height: 27px;
-}
-.dermoq p{
-    font-size: 12px;
-    line-height: 13px;
-}
-.zgridcont h1{
-    color: black;
-    text-align: center;
-    line-height: 53.35px;
-    padding-bottom: 60px;
-    font-size: 22px;
-}
-.sgridcont{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-gap: 0;
-}
-.samg{
-    font-size: 8px;
-}
-
-.grid_keks{
-    max-width: 100%;
-    object-fit: cover;
-}
-.griddy_keks{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-column-gap: 0px;
-    min-width: 100px;
+.reviewer_name{
+    padding-bottom: 100px;
 }
 .review_mamka{
     display: grid;
@@ -720,6 +689,191 @@ body {
     padding-bottom: 30px;
     padding-left: 10px;
     padding-right: 10px;
+}
+}
+
+@media all and (max-width: 480px) {
+/* .dermo{
+    padding-top: 0px;
+} */
+.header{
+    margin-bottom: 0px;
+
+}
+.header_all{
+    transform: rotate();
+}
+.fonover h1 { 
+    line-height: 55px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    font-size: 7em;
+}
+.fonover p{
+    line-height: 50px;
+    font-size: 4em;
+    /* margin-bottom: 0px; */
+}
+.gridzans {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+
+
+}
+body {
+    font-size: 5px;
+}
+
+.logo img { 
+    width: 50px;
+}
+.logo button {
+    padding: 3px;
+}
+.button span {
+    width: 10px;
+    height: 1px;
+    margin-top: 3px;
+       
+
+}
+.gridcont{
+    transform: translate(0px, -120px);
+    grid-template-columns: repeat(2,1fr);
+    padding: 0px 65px;
+    margin-top: 0px;
+
+}
+.dermo{
+    margin-bottom: 0px;
+}
+.dermoq h2{
+    padding-top: 15px;
+    font-size: 40px;
+    line-height: 53px;
+}
+.dermoq h3{
+    font-size: 22px;
+    line-height: 27px;
+}
+.dermoq p{
+    font-size: 16px;
+    line-height: 13px;
+}
+.sgridcont{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 0;
+    margin-bottom: 10px;
+}
+.zgridcont h1{
+    color: black;
+    text-align: left;
+    line-height: 53.35px;
+    padding-bottom: 60px;
+    font-size: 30px;
+}
+.ugridcont{
+    padding-bottom: 30px;
+}
+/* .zgridcont::after{
+    display: block;
+    content: '';
+    width: 55px;
+    height: 4px;
+    background-color: #F7654A;
+    /* margin-top: 15px;
+    margin-bottom: 15px; */
+    /* bottom: 0;
+    left: 0; */ */
+
+.sgridcont{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 0;
+}
+.samv{
+    margin-bottom: 0px;
+}
+
+.samg{
+    font-size: 8px;
+}
+.zan_title{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.zan_vse{
+    margin-bottom: 35px;
+}
+.zancontent{
+    text-align: center;
+    display: grid;
+    grid-gap: 27px 30px;
+    min-height: 200px;
+    min-width: 300px;
+    align-items: center;
+    background-color: #f0f0f0;
+    object-fit: cover;
+
+
+}
+.keksi_vse{
+    margin-bottom: 50px;
+}
+
+.grid_keks{
+    max-width: 100%;
+    object-fit: cover;
+}
+.griddy_keks{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 0px;
+    min-width: 100px;
+}
+.partners{
+    margin-bottom: 70px;
+}
+.review_all{
+    margin-bottom: 0px;
+}
+.review_mamka{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: left;
+}
+.reviewer_name{
+    padding-bottom: 60px;
+}
+.contacts_mamka{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+.contacts_gridcont{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.contact_name_info_text{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #999999;
+    padding-bottom: 25px;
+}
+.contact_info_text{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+    color: black;
+
 }
 .credits_wrapper{
     display: flex;
@@ -744,5 +898,29 @@ body {
     line-height: 22px;
     padding-top: 30px;
     padding-bottom: 30px;
+}
+.sam_container{
+    margin-bottom: 10px;
+}
+.samd_wrap{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F7654A;
+    flex-wrap: wrap;
+    margin: 0px;
+    left: 0px;
+    /* min-height: 209px; */
+    text-align: left;
+}
+.samf h4{
+    color: #FFFFFF;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    /* transform: none; */
+    padding-bottom: 20px;
 }
 }
